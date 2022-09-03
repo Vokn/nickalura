@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style_encriptador.css">
+
+    
+        <title>Encriptador</title>
+    </head>
+
+    <body>
+        
+        <header> 
+            <div class="caja">
+                <h1><img src="imagenes/Logo.png" alt="Logo de alura con la inicial de letra A"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Encriptador</a></li>
+                        <li><a href="">Ahorcado</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <!--#endregion-->
+
+        <main>
+    
+            <div class="area-general">
+                <section class="area-texto">
+                    <div>
+                        <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+                    </div>
+                    
+                    <div class="area-advertencia">
+                        <img src="imagenes/Advertencia.png" class="advertencia">
+                    </div>
+
+                    <div class="area-btn">
+
+                        <div class="area-transformar_texto">
+                            <button class="pag-button" id="encriptar-button" onclick="btnEncriptar()">Encriptar</button>
+                            <button class="pag-button" id="desencriptar-button" onclick="btnDesencriptar()">Desencriptar</button>
+                        </div>
+ 
+                    </div>
+    
+                </section>
+                
+                <section class="area-mensaje">
+
+                    <div class="area-desencriptado">
+                        <textarea class="mensaje" cols="18" rows="8"  ></textarea>
+                        <div class="img-mensaje"></div>
+                    </div>
+                    
+                    <button class="pag-button" id="copiar-button" onclick="copiar()">Copiar</button>
+                </section>
+            </div>
+            
+        </main>
+
+         <footer>
+            <img src="imagenes/Logo.png" alt="Logo de la Barbería Alura">
+            <p class="copyright">&copy Copyright 2022 | Nick Valdenegro</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
